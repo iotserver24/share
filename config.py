@@ -14,19 +14,19 @@ from logging.handlers import RotatingFileHandler
 
 
 
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-APP_ID = int(os.environ.get("APP_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7153149465:AAH6U5fS6OP_Mrz4u_4PMIcsFg8HtnPLXKM")
+APP_ID = int(os.environ.get("APP_ID", "24970621"))
+API_HASH = os.environ.get("API_HASH", "79fbc802b7af4a896b88db7197858cc9")
 
 
-OWNER = os.environ.get("OWNER", "") #Owner username
-OWNER_ID = int(os.environ.get("OWNER_ID", "")) #Owner user id
-DB_URL = os.environ.get("DB_URL", "")
-DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
+OWNER = os.environ.get("OWNER", "@R3AP3Redit") #Owner username
+OWNER_ID = int(os.environ.get("OWNER_ID", "6717221647")) #Owner user id
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://R3AP3Reditz:18751anish@cluster0.qsndmda.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DB_NAME", "Cluster0")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002172378143"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002166639637"))
 
 
 SECONDS = int(os.getenv("SECONDS", "600")) # auto delete in seconds
@@ -42,8 +42,8 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 
 try:
-    ADMINS=[7085541484]
-    for x in (os.environ.get("ADMINS", "5115691197 6273945163 6103092779 5231212075").split()):
+    ADMINS=[6717221647]
+    for x in (os.environ.get("ADMINS", "6717221647").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -57,13 +57,13 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
-BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot !"
+BOT_STATS_TEXT = "<b>BOT is alive from</b>\n{uptime}"
+USER_REPLY_TEXT = "❌Don't send me messages directly I'm only ANIMEVERSE OFFICIAL BOT NOTHING MORE!! !"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(7085541484)
+ADMINS.append(6717221647)
 
-LOG_FILE_NAME = "filesharingbot.txt"
+LOG_FILE_NAME = "logs.txt"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -89,8 +89,3 @@ def LOGGER(name: str) -> logging.Logger:
 
 
 
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper

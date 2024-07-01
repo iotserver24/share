@@ -16,7 +16,7 @@ from datetime import datetime
 from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID, PORT
 
 
-name ="""By @Madflix_Bots From Telegram"""
+name ="""By @R3AP3Redit From Telegram"""
 
 
 class Bot(Client):
